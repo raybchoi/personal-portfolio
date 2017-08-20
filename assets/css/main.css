@@ -3,15 +3,15 @@
 body {
   /*font-family: 'Raleway', sans-serif;*/
   font-family: 'Jura', sans-serif;
-  background-color: #E0E0E0;
+  background-color: #Fefefe;
 }
+
 .jumbotron {
-  background-image: url('../img/blueprint_background.jpg');
+  /*background-image is set by the JS file*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
-  color: #6699CC;
   margin-bottom: 0;
   /*https://stackoverflow.com/questions/9262861/css-background-image-to-fit-width-height-should-auto-scale-in-proportion*/
   font-weight: bold;
@@ -20,23 +20,20 @@ body {
 .jumbotron-banner {
   font-weight: bold;
 }
+/*welecome banner*/
 .lead {
-  font-size: 200%;
+  font-size: 300%;
   font-weight: bolder;
+  /*color - is set by the JS*/
 }
+
+/*breaks between sections*/
 .breaks {
   margin: 40px 0;
-  background-color: lightblue;
+  background-color: #fefefe;
   text-align: center;
   font-size: 40px;
 }
-
-/*.port {
-  border-color: black;
-  border-style: solid;
-  display: flex;
-  flex-wrap: wrap;
-}*/
 
 .port-pics {
   width: 50%;
@@ -45,6 +42,7 @@ body {
   margin: auto;
 }
 
+/*stretches each column to the edge of the screen*/
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -55,10 +53,12 @@ body {
     padding-left: 0;
   }
 }
-.port {
+.portfolio-column {
+  /*centers all the pictures*/
   margin: auto;
 }
-.port-col-2 {
+
+.port-2-columns {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -68,5 +68,6 @@ p {
   text-align: center;
   margin-top: 5%;
 }
+
 /*https://www.codeply.com/go/JNy8BtYSem*/
 /*https://v4-alpha.getbootstrap.com/layout/grid/*/
