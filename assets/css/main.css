@@ -1,1 +1,72 @@
 /* custom styles */
+
+body {
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Jura', sans-serif;
+  background-color: #E0E0E0;
+}
+.jumbotron {
+  background-image: url('../img/blueprint_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  color: #6699CC;
+  margin-bottom: 0;
+  /*https://stackoverflow.com/questions/9262861/css-background-image-to-fit-width-height-should-auto-scale-in-proportion*/
+  font-weight: bold;
+}
+
+.jumbotron-banner {
+  font-weight: bold;
+}
+.lead {
+  font-size: 200%;
+  font-weight: bolder;
+}
+.breaks {
+  margin: 40px 0;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*.port {
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+.port-pics {
+  width: 50%;
+  /*height: 70%;*/
+  display: block;
+  margin: auto;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.port {
+  margin: auto;
+}
+.port-col-2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  margin-top: 5%;
+}
+/*https://www.codeply.com/go/JNy8BtYSem*/
+/*https://v4-alpha.getbootstrap.com/layout/grid/*/

@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Changed by Ray</title>
+  <title>Ray's Personal Portfolio</title>
   <!-- meta -->
   <meta charset="utf-8" />
-  <meta name="description" content="Personal Site">
-  <meta name="author" content="GA Student">
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <!-- <meta name="description" content="Personal Site">
+  <meta name="author" content="GA Student"> -->
+  <!-- <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> -->
+
   <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- scripts -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
   <!-- styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <!-- scripts -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+  <!-- <link rel="icon" type="image/png" href="assets/imgs/favicon.png"> -->
 </head>
 <body>
-  <div id="page-wrapper">
-    <h1>Ray's Personal Page!</h1>
-    <img src="assets/imgs/ray_choi.png">
+
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded" style="background-color: white; opacity: .8;">
+    <!-- <fixed-top> keeps it stick on the top -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="assets/img/ray_choi.png" width = 30 height = 30>Ray</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#portfolio">Portfolio<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#about-me">About Me<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#contact">Contact<span class="sr-only"></span></a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+  <!-- page scrolling links http://www.echoecho.com/htmllinks08.htm -->
+  <div class="jumbotron jumbotron-fluid">
+    <!-- <img src='assets/img/blueprint_background.jpg'> -->
+    <!-- <div class="container"> -->
+      <h1 class="display-3 jumbotron-banner"></h1>
+      <p class="lead">Welcome To My Portfolio</p>
+    <!-- </div> -->
   </div>
+    <!-- .container-fluid saying that it will strench to edge of width -->
+    <div class=".container-fluid">
+      <!-- no-gutters removes extra spacing between containers-->
+       <div class="row no-gutters">
+         <div class="col-md-12 breaks"><a name="portfolio"></a>Portfolio</div>
+      </div>
+
+
+            <div class="row no-gutters">
+              <div class="col-md-6 port"></div>
+              <div class="col-md-6 port-col-2">
+                <div class='top port'></div>
+                <div class='bottom port'></div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+         <div class="col-md-12 breaks"><a name="about-me"></a>About Me</div>
+         <div class="col-md-12 breaks"><a name="contact"></a>Contact</div>
+       </div>
+     </div>
+  </div>
+
+
+
 </body>
 </html>
