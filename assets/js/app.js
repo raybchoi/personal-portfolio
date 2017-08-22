@@ -1,28 +1,28 @@
 // sanity check
 console.log("app.js linked.");
-const portfolio = [
+const workExp = [
     {
       'companyName': 'Intuit',
       'role': 'Lead Global Product Manager for Find-A-ProAdvisor',
       'companyLink': 'https://quickbooks.intuit.com/find-an-accountant/',
       'dates': '2016 - 2017',
-      'img': 'assets/img/qb_logo.png',
+      'img': 'assets/img/workExp/qb_logo.png',
     },
     {
       'companyName': 'Ernst and Young (EY)',
       'role': 'Manager in the Technology Advisory Practice',
       'companyLink': 'https://www.ey.com',
       'dates': '2011 - 2014',
-      'img': 'assets/img/ey_logo.gif',
+      'img': 'assets/img/workExp/ey_logo.gif',
     },
     {
       'companyName': 'Accenture',
       'role': 'Consultant in the Technology Advisory Group',
       'companyLink': 'https://www.accenture.com',
       'dates': '2007 - 2011',
-      'img': 'assets/img/acn_logo.png',
+      'img': 'assets/img/workExp/acn_logo.png',
     }
-  ];;
+  ];
 
   const background = [
     {
@@ -37,16 +37,43 @@ const portfolio = [
       'img': 'assets/img/background/afternoonsea.jpg',
       'banner': 'Good Afternoon',
       'timeStart': '12',
-      'timeEnd': '16'
+      'timeEnd': '17'
     },
     {
       'timeOfDay': 'evening',
       'img': 'assets/img/background/nightny.jpg',
       'banner': 'Good Evening',
-      'timeStart': '16',
+      'timeStart': '17',
       'timeEnd': '4'
     }
-  ]
+  ];
+
+  const projects = [
+      {
+        'projectName': 'Memory Game',
+        'goal': 'Creating a basic game leveragin JS and HTML',
+        'img': 'assets/img/portfolio/memorygame.png',
+        'gitHubLink': 'www.'
+      },
+      {
+        'projectName': 'Gettysburg',
+        'goal': 'jQuery and manipulating the DOM',
+        'img': 'assets/img/portfolio/gettysburgaddress.jpg',
+        'gitHubLink': 'www.'
+      },
+      {
+        'projectName': 'Mr. Fox',
+        'goal': 'jQuery and accessing Objects / Arrays',
+        'img': 'assets/img/portfolio/mrfox.jpg',
+        'gitHubLink': 'www.'
+      },
+      {
+        'projectName': 'Functions',
+        'goal': 'Learning how to use higher order functions',
+        'img': 'assets/img/portfolio/functions.png',
+        'gitHubLink': 'www.'
+      }
+    ];
 
 //https://stackoverflow.com/questions/9468055/what-does-new-in-javascript-do-anyway
 // the new operator produces an object that inherits from f.prototype
@@ -81,8 +108,35 @@ $(document).ready(function(){
   }
 
   // this is a loop to go through the portfolio to load pictures and words
-  for ( let i = 0; i<portfolio.length; i++ ) {
-    $('.portfolio-column').eq(i).append(`<a href='${portfolio[i].companyLink}'><img class='port-pics' src=${portfolio[i].img}></a><p>I worked at ${portfolio[i].companyName} as a ${portfolio[i].role}</p>`);
+  for ( let i = 0; i<workExp.length; i++ ) {
+    //$('.portfolio-column').eq(i).append(`<a href='${portfolio[i].companyLink}'><img class='port-pics' src=${portfolio[i].img}></a><p>I worked at ${portfolio[i].companyName} as a ${portfolio[i].role}</p>`);
+    $('.work-experience-column').eq(i).append(`<div class='work-experience-div-${i}'>
+    <img class='work-experience-pics' src=${workExp[i].img}>
+    <p class='picture-subtitle'>Position: ${workExp[i].role}</p>
+    </div>`);
+  }
+// on click of the QB icon
+// show information about the job
+  console.log($('.work-experience-pics[0]'));
+  $('.work-experience-div-0').on('click', function (){
+    // alert('hi');
+    $(this).fadeOut(function (){
+      // $(this).remove('img, p');
+      // $('p').remove();
+      $('.work-experience-column').eq(0).fadeIn(function (){
+        $('.work-experience-column').eq(0).html(`<p>Outcomes: </p>
+          <p>•	Provide career coaching and mentorship to developers who aspire to become Product Managers</p>`)
+      });
+    });
+  });
+
+  for ( let i = 0; i<projects.length; i++ ) {
+    //$('.portfolio-column').eq(i).append(`<a href='${portfolio[i].companyLink}'><img class='port-pics' src=${portfolio[i].img}></a><p>I worked at ${portfolio[i].companyName} as a ${portfolio[i].role}</p>`);
+    $('.projects-column').eq(i).append(`<div class='projects-div'>
+    <img class='projects-pics' src=${projects[i].img}>
+    <p class='picture-subtitle'>Name of Project: ${projects[i].projectName}</p>
+    <p class='goal'>Goal: ${projects[i].goal}</p>
+    </div>`);
   }
 
 });
@@ -100,3 +154,6 @@ $(document).ready(function(){
 // $('.jumbotron-banner').fadeOut(function() {
 //   $(this).text("Good Morning")
 // }).fadeIn();
+
+
+// <p class='compName'>Company Name: ${workExp[i].companyName}</p>

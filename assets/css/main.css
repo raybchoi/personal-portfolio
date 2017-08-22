@@ -33,16 +33,45 @@ body {
   background-color: #fefefe;
   text-align: center;
   font-size: 40px;
+  font-weight: bold;
 }
 
-.port-pics {
+.work-experience-pics {
   width: 50%;
   /*height: 70%;*/
   display: block;
   margin: auto;
 }
+.work-experience-column {
+  /*centers all the pictures*/
+  margin: auto;
+}
+.work-experience-2-columns {
+  /*two columns*/
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 
-/*stretches each column to the edge of the screen*/
+
+.projects-pics {
+  width: 70%;
+  /*height: 70%;*/
+  display: block;
+  margin: auto;
+}
+.projects-column {
+  margin: auto;
+
+  /*position: relative;
+  vertical-align: middle;*/
+}
+.projects-div {
+  margin: auto;
+}
+.picture-subtitle{
+  margin: auto;
+}
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -53,21 +82,21 @@ body {
     padding-left: 0;
   }
 }
-.portfolio-column {
-  /*centers all the pictures*/
-  margin: auto;
-}
 
-.port-2-columns {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
-p {
+.picture-subtitle {
   text-align: center;
-  margin-top: 5%;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 0px 100px;
+  color: rgba(138, 126, 126, 1);
 }
+
+.goal {
+  text-align: center;
+  font-size: 110%;
+  color: rgba(102, 102, 153, 1);
+}
+
 
 /*https://www.codeply.com/go/JNy8BtYSem*/
 /*https://v4-alpha.getbootstrap.com/layout/grid/*/
