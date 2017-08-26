@@ -38,35 +38,23 @@ body {
 
 .work-experience-pics {
   width: 50%;
-  /*height: 70%;*/
   display: block;
-  margin: auto;
-}
-.work-experience-column {
-  /*centers all the pictures*/
-  margin: auto;
-}
-.work-experience-2-columns {
-  /*two columns*/
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
 
 
 .projects-pics {
   width: 70%;
-  /*height: 70%;*/
   display: block;
   margin: auto;
 }
-.projects-column {
+.projects-column, .work-experience-column {
   margin: auto;
 
   /*position: relative;
   vertical-align: middle;*/
 }
-.projects-div {
+.projects-div, .work-experience-div {
   margin: auto;
 }
 .picture-subtitle{

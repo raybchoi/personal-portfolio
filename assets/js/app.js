@@ -109,14 +109,20 @@ $(document).ready(function(){
 
   // this is a loop to go through the portfolio to load pictures and words
   for ( let i = 0; i<workExp.length; i++ ) {
-    //$('.portfolio-column').eq(i).append(`<a href='${portfolio[i].companyLink}'><img class='port-pics' src=${portfolio[i].img}></a><p>I worked at ${portfolio[i].companyName} as a ${portfolio[i].role}</p>`);
-    $('.work-experience-column').eq(i).append(`<div class='work-experience-div-${i}'>
-    <img class='work-experience-pics' src=${workExp[i].img}>
-    <p class='picture-subtitle'>Position: ${workExp[i].role}</p>
-    </div>`);
+    $('.work-experience-column').append(`
+      <div class="col-md-6">
+        <div class='work-experience-div work-experience-div-${[i]}'>
+        <img class='work-experience-pics' src=${workExp[i].img}>
+        <p class='picture-subtitle'>Position: ${workExp[i].role}</p>
+        </div>
+      </div>
+      `);
   }
+
+  // }
 // on click of the QB icon
 // show information about the job
+/*
   console.log($('.work-experience-pics[0]'));
   $('.work-experience-div-0').on('click', function (){
     // alert('hi');
@@ -129,14 +135,18 @@ $(document).ready(function(){
       });
     });
   });
-
+*/
   for ( let i = 0; i<projects.length; i++ ) {
     //$('.portfolio-column').eq(i).append(`<a href='${portfolio[i].companyLink}'><img class='port-pics' src=${portfolio[i].img}></a><p>I worked at ${portfolio[i].companyName} as a ${portfolio[i].role}</p>`);
-    $('.projects-column').eq(i).append(`<div class='projects-div'>
-    <img class='projects-pics' src=${projects[i].img}>
-    <p class='picture-subtitle'>Name of Project: ${projects[i].projectName}</p>
-    <p class='goal'>Goal: ${projects[i].goal}</p>
-    </div>`);
+    $('.projects-columns').append(`
+      <div class="col-md-6">
+        <div class='projects-div'>
+        <img class='projects-pics' src=${projects[i].img}>
+        <p class='picture-subtitle'>Name of Project: ${projects[i].projectName}</p>
+        <p class='goal'>Goal: ${projects[i].goal}</p>
+        </div>
+      </div>
+      `);
   }
 
 });
