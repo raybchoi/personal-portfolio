@@ -53,25 +53,31 @@ const workExp = [
         'projectName': 'Memory Game',
         'goal': 'Creating a basic game leveragin JS and HTML',
         'img': 'assets/img/portfolio/memorygame.png',
-        'gitHubLink': 'www.'
+        'link': '#'
       },
       {
         'projectName': 'Gettysburg',
         'goal': 'jQuery and manipulating the DOM',
         'img': 'assets/img/portfolio/gettysburgaddress.jpg',
-        'gitHubLink': 'www.'
+        'link': '#'
       },
       {
         'projectName': 'Mr. Fox',
         'goal': 'jQuery and accessing Objects / Arrays',
         'img': 'assets/img/portfolio/mrfox.jpg',
-        'gitHubLink': 'www.'
+        'link': '#'
       },
       {
         'projectName': 'Functions',
         'goal': 'Learning how to use higher order functions',
         'img': 'assets/img/portfolio/functions.png',
-        'gitHubLink': 'www.'
+        'link': '#'
+      },
+      {
+        'projectName': 'Ninja Turtles Racing Game',
+        'goal': 'Week 1 Capstone: HTML, jQuery, manipulating the DOM',
+        'img': 'assets/img/portfolio/ninjaturtlesracing.png',
+        'link': 'http://raychoi.me/03_01_racing_game/'
       }
     ];
 
@@ -113,7 +119,8 @@ $(document).ready(function(){
       <div class="col-md-6">
         <div class='work-experience-div work-experience-div-${[i]}'>
         <img class='work-experience-pics' src=${workExp[i].img}>
-        <p class='picture-subtitle'>Position: ${workExp[i].role}</p>
+        <p class='picture-subtitle'>${workExp[i].role}</p>
+          </div>
         </div>
       </div>
       `);
@@ -141,8 +148,8 @@ $(document).ready(function(){
     $('.projects-columns').append(`
       <div class="col-md-6">
         <div class='projects-div'>
-        <img class='projects-pics' src=${projects[i].img}>
-        <p class='picture-subtitle'>Name of Project: ${projects[i].projectName}</p>
+        <a href='${projects[i].link}' target='_blank'><img class='projects-pics' src=${projects[i].img}></a>
+        <p class='picture-subtitle project-word'>Name of Project:</p> <p class='picture-subtitle'>${projects[i].projectName}</p>
         <p class='goal'>Goal: ${projects[i].goal}</p>
         </div>
       </div>

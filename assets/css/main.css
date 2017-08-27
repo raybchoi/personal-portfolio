@@ -30,24 +30,19 @@ body {
 /*breaks between sections*/
 .breaks {
   margin: 40px 0;
-  background-color: #fefefe;
+  padding: 10px;
+  background-color: grey;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
 }
 
 .work-experience-pics {
-  width: 50%;
+  width: 30%;
   display: block;
   margin: auto;
 }
 
-
-.projects-pics {
-  width: 70%;
-  display: block;
-  margin: auto;
-}
 .projects-column, .work-experience-column {
   margin: auto;
 
@@ -56,10 +51,16 @@ body {
 }
 .projects-div, .work-experience-div {
   margin: auto;
+  text-align: center;
 }
-.picture-subtitle{
+
+/*project pics*/
+.projects-pics {
+  width: 40%;
+  display: block;
   margin: auto;
 }
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -76,6 +77,11 @@ body {
   font-size: 150%;
   font-weight: bold;
   padding: 0px 100px;
+  color: black;
+  margin: auto;
+}
+
+.project-word{
   color: rgba(138, 126, 126, 1);
 }
 
@@ -83,6 +89,7 @@ body {
   text-align: center;
   font-size: 110%;
   color: rgba(102, 102, 153, 1);
+  padding: 0px 5%;
 }
 
 
